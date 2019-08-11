@@ -1,0 +1,12 @@
+# Remove the afdb dataset from the daset folder
+dataset/afdb/*
+# This trick allows the folder to be commited to preserve the structure of the project
+!dataset/afdb/.gitkeep 
+
+__pycache__/
+
+
+todo
+.vscode
+.idea
+.directory
