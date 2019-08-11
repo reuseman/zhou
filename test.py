@@ -4,34 +4,25 @@ import numpy as np
 import af_zhou as zhou
 import utils
 import wfdb
-import wfdb.processing as processing
 
-import pickle as pkl
+
+def read_record(record_name):
+    record_path = str(Path.joinpath(datasets_path, "afdb", record_name))
+
+    record = wfdb.rdrecord(record_path)
+    annot_qrs = wfdb.rdann(record_path, "qrs")
+    annot_af = wfdb.rdann(record_path, "atr")
+
+    return record, annot_qrs, annot_af
+
 
 # Paths
 main_dir_path = Path().absolute()
-dataset_dir_path = Path.joinpath(main_dir_path, "dataset")
-afdb_dataset = Path().joinpath(dataset_dir_path, "afdb")
+datasets_path = Path.joinpath(main_dir_path, "dataset")
+afdb_dataset = Path().joinpath(datasets_path, "afdb")
 
+record, annot_qrs, annot_af = read_record("04908")
+entropy, wv = zhou.get_entropy(annot_qrs.sample)
+print(len(entropy))
+print(len(wv))
 
-save = False
-load = True
-file_name = Path().joinpath(dataset_dir_path, "afdb_result")
-
-
-if save:
-    array = [
-        ["04490", 99, 100, 34.94],
-        ["39j48", 99, 100, 34.94],
-        ["jf47", 99, 100, 34.94],
-    ]
-    utils.save_object(file_name, array)
-
-if load:
-    with open(file_name, "rb") as f:
-        array = pkl.load(f)
-
-    print(array)
-
-file_name_csv = Path().joinpath(dataset_dir_path, "afdb_result.csv")
-utils.save_results_csv(file_name_csv, array)

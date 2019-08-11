@@ -22,3 +22,5 @@ print("SPECIFICITY   : ", sp)
 print("PRECISION     : ", ppv)
 print("ACCURACY      : ", acc)
 print("-----------------------------------")
+
+utils.save_results_csv(csv_file_name, results)

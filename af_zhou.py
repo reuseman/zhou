@@ -8,15 +8,14 @@ def get_pimap(n, cons):
     return [pi(p / n) for p in range(1, n + 1)]
 
 
+# Here 1 bpm is lost: the part before the first QRS.
 def compute_bpm(qrs_annotations_list):
     bpm_list = list()
 
-    prev_abscissa = 0
-    for i in range(0, len(qrs_annotations_list)):
-        dist = qrs_annotations_list[i] - prev_abscissa
+    for i in range(0, len(qrs_annotations_list) - 1):
+        dist = qrs_annotations_list[i] - qrs_annotations_list[i + 1]
         bpm = 60 / (dist / frequency)
         bpm_list.append(bpm)
-        prev_abscissa = qrs_annotations_list[i]
 
     return bpm_list
 
@@ -64,4 +63,4 @@ def get_entropy(qrs_annotations_list):
     sy = compute_sy(bpm)
     wv = compute_wv(sy)
 
-    return compute_entropy(wv), wv
+    return compute_entropy(wv)

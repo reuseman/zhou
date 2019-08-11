@@ -59,7 +59,8 @@ def save_results_csv(path, results):
         fieldnames = ["RECORD", "TP", "TN", "FP", "FN"]
 
         results_writer = csv.writer(
-            results_file, delimiter=",", quotechar='"', quoting=csv.QUOTE_NONNUMERIC
+            results_file, delimiter=",",
+            quotechar='"', quoting=csv.QUOTE_NONNUMERIC
         )
 
         results_writer.writerow(fieldnames)
