@@ -18,15 +18,21 @@ csv_af_path = Path.joinpath(datasets_path, "af_events.csv")
 # Settings
 record_len = 9205760
 entropy_threshold = 0.639
+read_corrected_qrs = True
+corrected_records = ["05091", "07859"]
 save_array_results = True  # this allows to save the array results on a file
 
 # %%
 
 
-# Gives back Annotations-QRS and Annotation-AF
+# Gives back Annotations-QRS
 def read_record_qrs(record_name):
-    record_path = str(Path.joinpath(datasets_path, "afdb", record_name))
-    annot_qrs = wfdb.rdann(record_path, "qrs")
+    record_path = str(Path.joinpath(afdb_path, record_name))
+    if read_corrected_qrs and record_name in corrected_records:
+        print("entro")
+        annot_qrs = wfdb.rdann(record_path, "qrsc")
+    else:
+        annot_qrs = wfdb.rdann(record_path, "qrs")
 
     return annot_qrs
 
@@ -56,36 +62,12 @@ def compute_binary_af_qrs(binary_af_samples, annot_qrs):
         interval_length = end_value - start_value
         percentage_of_ones = ones / interval_length
 
-        element = 1 if percentage_of_ones == 1 else 0
-        binary_af_qrs.append(element)
+        #element = 1 if percentage_of_ones == 1 else 0
+        binary_af_qrs.append(percentage_of_ones)
 
         start_value = end_value + 1
 
     return binary_af_qrs
-
-
-def compute_oracle_af_qrs(patient_af_events, annot_qrs):
-    oracle_af_qrs = list()
-    i = 0
-    n = len(patient_af_events)
-    af_records = patient_af_events[i]
-    interval = range(af_records[0], af_records[1] + 1)
-
-    for qrs in annot_qrs.sample:
-        if qrs >= interval[-1]:
-            if i < n - 1:
-                i = i + 1
-                af_records = patient_af_events[i]
-                interval = range(af_records[0], af_records[1] + 1)
-            else:
-                oracle_af_qrs.append(0)
-
-        if qrs < interval[0]:
-            oracle_af_qrs.append(0)
-        elif qrs >= interval[0] and qrs <= interval[-1]:
-            oracle_af_qrs.append(1)
-
-    return oracle_af_qrs
 
 
 # %%
@@ -99,12 +81,11 @@ results = list()
 af_beats = 0
 non_af_beats = 0
 hybrid = 0
+
 for record_name in afdb_names:
-    record_path = str(Path.joinpath(afdb_path, record_name))
-    annot_qrs = read_record_qrs(record_path)
+    annot_qrs = read_record_qrs(record_name)
     # print("ANNOT QRS LEN: ", len(annot_qrs.sample))
 
-    # Three 0s are added to match the len of QRS points
     entr = zhou.get_entropy(annot_qrs.sample)
     predictions = list(map(lambda x: 1 if x >= entropy_threshold else 0, entr))
     for e in predictions:

@@ -14,8 +14,9 @@ Execute `results.py` to save the classification for every record in `afdb_result
 
 -----------
 
-**A) CURRENT RESULT WITH:**     
-1 if percentage = 100%, else 0
+**A) CURRENT RESULT WITH (same results with .qrsc):**     
+1 if percentage = 100%, else 0         
+
 <pre>
 TRUE POSITIVE :  498896
 TRUE NEGATIVE :  684374
@@ -28,6 +29,23 @@ SENSITIVITY   :  0.960355424829304
 SPECIFICITY   :  0.9749014591313588
 PRECISION     :  0.9658886963592539
 ACCURACY      :  0.9687151039227694
+</pre>
+
+-----------------------------------
+
+with `05091.qrsc`, `07859.qrsc`
+<pre>
+TRUE POSITIVE :  500519
+TRUE NEGATIVE :  684414
+FALSE POSITIVE:  17563
+FALSE NEGATIVE:  20599
+</pre>
+
+<pre>
+SENSITIVITY   :  0.960471524683469
+SPECIFICITY   :  0.9749806617595733
+PRECISION     :  0.9660999610100331
+ACCURACY      :  0.9687988259293023
 </pre>
 
 -----------------------------------
@@ -49,6 +67,22 @@ ACCURACY      :  0.9686414230558894
 </pre>
 
 -----------------------------------
+with `05091.qrsc`, `07859.qrsc`
+<pre>
+TRUE POSITIVE :  500694
+TRUE NEGATIVE :  684149
+FALSE POSITIVE:  17388
+FALSE NEGATIVE:  20864
+</pre>
+
+<pre>
+SENSITIVITY   :  0.9599967788817351
+SPECIFICITY   :  0.9752144220475898
+PRECISION     :  0.9664377453762146
+ACCURACY      :  0.9687252421112015
+</pre>
+
+-----------------------------------
 
 **C) CURRENT RESULT WITH:**     
 Hybrid not classified: 584
@@ -66,7 +100,23 @@ PRECISION     :  0.9664200716345976
 ACCURACY      :  0.9689327545253501
 </pre>
 
----------------------------
+-----------------------------------
+with `05091.qrsc`, `07859.qrsc`
+<pre>
+TRUE POSITIVE :  500519
+TRUE NEGATIVE :  684114
+FALSE POSITIVE:  17279
+FALSE NEGATIVE:  20599
+</pre>
+
+<pre>
+SENSITIVITY   :  0.960471524683469
+SPECIFICITY   :  0.9753647384561864
+PRECISION     :  0.9666298440704676
+ACCURACY      :  0.9690162297108165
+</pre>
+
+-----------------------------------
 
 ### ALGORITHM:
 <pre>
