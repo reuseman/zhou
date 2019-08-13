@@ -44,28 +44,22 @@ def compute_binary_af_samples(patient_af_events):
 
 
 # Generates an array of qrs, where 1 is an heart beat with AF and 0 not AF
-# [!] TODO change implementation to see if improvements are possible
 def compute_binary_af_qrs(binary_af_samples, annot_qrs):
     binary_af_qrs = list()
 
-    # With this approach the ends of the range are repeated, except 0 and a[n],
-    #   and the percentage based on numbers of 1s is calculated
-    start_value = 0
-    for i in range(0, len(annot_qrs.sample)):
-        # [!] With the commented implementation FN 297 and not 296
-        end_value = annot_qrs.sample[i]
-        # end_value = annot_qrs.sample[i] + 1
+    start_value = annot_qrs.sample[0]
+    for i in range(1, len(annot_qrs.sample)):
+        end_value = annot_qrs.sample[i] + 1
 
         ones = binary_af_samples[start_value:end_value].count(1)
 
         interval_length = end_value - start_value
         percentage_of_ones = ones / interval_length
 
-        element = 1 if percentage_of_ones >= entropy_threshold else 0
+        element = 1 if percentage_of_ones == 1 else 0
         binary_af_qrs.append(element)
 
-        start_value = annot_qrs.sample[i] + 1
-        # start_value = annot_qrs.sample[i]
+        start_value = end_value + 1
 
     return binary_af_qrs
 
@@ -102,6 +96,9 @@ afdb_names = set([x.stem for x in afdb_path.iterdir() if x.is_file()])
 afdb_names.remove(".gitkeep")
 
 results = list()
+af_beats = 0
+non_af_beats = 0
+hybrid = 0
 for record_name in afdb_names:
     record_path = str(Path.joinpath(afdb_path, record_name))
     annot_qrs = read_record_qrs(record_path)
@@ -110,33 +107,38 @@ for record_name in afdb_names:
     # Three 0s are added to match the len of QRS points
     entr = zhou.get_entropy(annot_qrs.sample)
     predictions = list(map(lambda x: 1 if x >= entropy_threshold else 0, entr))
-    predictions.insert(0, 0)
-    predictions.insert(0, 0)
-    predictions.insert(0, 0)
+    for e in predictions:
+        if e == 0:
+            non_af_beats += 1
+        else:
+            af_beats += 1
     # print("ENTROPY LEN: ", len(predictions))
 
     patient_af_events = correct_af_events[record_name]
 
-    # binary_af_samples = compute_binary_af_samples(patient_af_events)
-    # binary_af_qrs = compute_binary_af_qrs(binary_af_samples, annot_qrs)
-
-    oracle_af_qrs = compute_oracle_af_qrs(patient_af_events, annot_qrs)
+    binary_af_samples = compute_binary_af_samples(patient_af_events)
+    oracle = compute_binary_af_qrs(binary_af_samples, annot_qrs)
 
     tp, tn, fp, fn = 0, 0, 0, 0
-    for prediction, oracle in zip(predictions, oracle_af_qrs):
-        if prediction == oracle == 1:
-            tp += 1
-        elif prediction == oracle == 0:
-            tn += 1
-        elif prediction != oracle == 0:
-            fp += 1
+    for i in range(0, len(predictions)):
+        if oracle[i + 2] != 1 and oracle[i + 2] != 0:
+            hybrid += 1
         else:
-            fn += 1
+            if predictions[i] == oracle[i + 2] == 1:
+                tp += 1
+            elif predictions[i] == oracle[i + 2] == 0:
+                tn += 1
+            elif predictions[i] != oracle[i + 2] == 0:
+                fp += 1
+            else:
+                fn += 1
 
-    results.append([record_name, tp, tn, fp, fn])
-    # se, sp, ppv, acc = utils.compute_metrics(tp, tn, fp, fn)
+    results.append([record_name, tp, tn, fp, fn, len(oracle)])
 
 print("EXECUTION TIME: ", time.time() - start_time)
+print("AF BEATS: ", af_beats)
+print("NON AF BEATS: ", non_af_beats)
+print("HYBID NOT CLASSIFIED: ", hybrid)
 
 if save_array_results:
     file_name = Path().joinpath(datasets_path, "afdb_result")

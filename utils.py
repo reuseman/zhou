@@ -56,7 +56,7 @@ def compute_classifications(results):
 
 def save_results_csv(path, results):
     with open(path, mode="w") as results_file:
-        fieldnames = ["RECORD", "TP", "TN", "FP", "FN"]
+        fieldnames = ["RECORD", "TP", "TN", "FP", "FN", "LEN(oracle)"]
 
         results_writer = csv.writer(
             results_file, delimiter=",",
