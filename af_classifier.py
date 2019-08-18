@@ -62,8 +62,8 @@ def compute_binary_af_qrs(binary_af_samples, annot_qrs):
         interval_length = end_value - start_value
         percentage_of_ones = ones / interval_length
 
-        #element = 1 if percentage_of_ones == 1 else 0
-        binary_af_qrs.append(percentage_of_ones)
+        element = 1 if percentage_of_ones > 0.5 else 0
+        binary_af_qrs.append(element)
 
         start_value = end_value + 1
 
