@@ -13,7 +13,7 @@ def compute_bpm(qrs_annotations_list):
     bpm_list = list()
 
     for i in range(0, len(qrs_annotations_list) - 1):
-        dist = qrs_annotations_list[i] - qrs_annotations_list[i + 1]
+        dist = qrs_annotations_list[i + 1] - qrs_annotations_list[i]
         bpm = 60 / (dist / frequency)
         bpm_list.append(bpm)
 

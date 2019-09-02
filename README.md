@@ -1,14 +1,12 @@
-**REQUIREMENTS**    
-numpy==1.15.1      
-wfdb==2.2.1      
-<br>
-
------------
-
 **GENERAL INFO**   
 Execute `af_classifier.py` to generate the results and save them through pickle.           
 Execute `results.py` to save the classification for every record in `afdb_result.csv` and print the metrics.
-       
+
+Execute `dataset_generator.py` to generate dataset that will be used with weka. Folders which contains `train.csv` and `test.csv` for every record will be created. Train is made up by `n-1` records while test is formed by the remaining one, to be able to perform a leave one out cross validation.
+
+In `weka_training/` a file written in Java that uses Weka libraries is contained. It applies different algorithms on a specific dataset contained in `dataset/generated/`.      
+The results can be retrieved through `xlsx_generator.py`.
+
 `dataset/afdb_result.csv` contains the TP, TN, FP, FN for all the records         
 `dataset/afdb_result` is a an array of [record_name, tp, tn, fp, fn] that can be read through pickle
 

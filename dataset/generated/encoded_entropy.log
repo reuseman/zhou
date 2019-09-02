@@ -1,0 +1,571 @@
+[alex@fedortop ~]$ cd Uni/Tirocinio/
+code/   papers/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/
+code/   papers/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/
+dataset/       .git/          __pycache__/   .vscode/       weka_training/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/
+dataset/       .git/          __pycache__/   .vscode/       weka_training/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/weka_training/
+.idea/  out/    src/    target/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/weka_training/
+.idea/  out/    src/    target/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/weka_training/out/artifacts/wekaTraining_jar/
+[alex@fedortop wekaTraining_jar]$ ls
+wekaTraining.jar
+[alex@fedortop wekaTraining_jar]$ java -Xms2G -Xmx6G  -jar wekaTraining.jar      
+=======================================
+  CURRENT FOLDER: 05261 | (1/25)
+         started: 22:08:31 27/08/2019
+=======================================
+Aug 27, 2019 10:08:31 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Aug 27, 2019 10:08:31 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+BayesNet              evaluated in 0minutes, with: 98.51946226166417 correct,  1.480537738335823 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.51946226166417 correct,  1.480537738335823 incorrect,  0.0 unclassified.
+IBk                   evaluated in 69minutes, with: 98.09990334768474 correct,  1.9000966523152623 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.51946226166417 correct,  1.480537738335823 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 97.94833494420526 correct,  2.0516650557947456 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 98.09990334768474 correct,  1.9000966523152623 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.09990334768474 correct,  1.9000966523152623 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.09990334768474 correct,  1.9000966523152623 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07879 | (2/25)
+         started: 23:22:18 27/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.73137282624063 correct,  0.2686271737593666 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.73137282624063 correct,  0.2686271737593666 incorrect,  0.0 unclassified.
+IBk                   evaluated in 65minutes, with: 99.74904566661954 correct,  0.2509543333804609 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.73137282624063 correct,  0.2686271737593666 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 29.246783543051038 correct,  70.75321645694896 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.74904566661954 correct,  0.2509543333804609 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.74904566661954 correct,  0.2509543333804609 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.74904566661954 correct,  0.2509543333804609 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 06453 | (3/25)
+         started: 00:32:29 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.81988112671203 correct,  1.1801188732879662 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.81988112671203 correct,  1.1801188732879662 incorrect,  0.0 unclassified.
+IBk                   evaluated in 57minutes, with: 98.81413845579578 correct,  1.1858615442042093 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.81988112671203 correct,  1.1801188732879662 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 98.7222557211359 correct,  1.2777442788640998 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 98.81413845579578 correct,  1.1858615442042093 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.81413845579578 correct,  1.1858615442042093 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.81413845579578 correct,  1.1858615442042093 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04043 | (4/25)
+         started: 01:34:23 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 85.45997900008076 correct,  14.54002099991923 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 85.45997900008076 correct,  14.54002099991923 incorrect,  0.0 unclassified.
+IBk                   evaluated in 91minutes, with: 85.98659235926016 correct,  14.013407640739842 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 85.45997900008076 correct,  14.54002099991923 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 76.36055245941361 correct,  23.63944754058638 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 85.98659235926016 correct,  14.013407640739842 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 85.98659235926016 correct,  14.013407640739842 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 85.98659235926016 correct,  14.013407640739842 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 05091 | (5/25)
+         started: 03:09:43 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+IBk                   evaluated in 62minutes, with: 99.59475630983464 correct,  0.40524369016536116 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.59475630983464 correct,  0.40524369016536116 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.59475630983464 correct,  0.40524369016536116 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.59475630983464 correct,  0.40524369016536116 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 00735 | (6/25)
+         started: 04:16:18 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.73704099644482 correct,  1.2629590035551799 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.73149690475599 correct,  0.2685030952440146 incorrect,  0.0 unclassified.
+IBk                   evaluated in 65minutes, with: 98.73704099644482 correct,  1.2629590035551799 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.73149690475599 correct,  0.2685030952440146 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 99.17460159610174 correct,  0.8253984038982671 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 98.73704099644482 correct,  1.2629590035551799 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.73704099644482 correct,  1.2629590035551799 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.73704099644482 correct,  1.2629590035551799 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 03665 | (7/25)
+         started: 05:25:43 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.31380911761919 correct,  0.6861908823808169 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.31380911761919 correct,  0.6861908823808169 incorrect,  0.0 unclassified.
+IBk                   evaluated in 62minutes, with: 99.30622689792436 correct,  0.6937731020756326 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.31380911761919 correct,  0.6861908823808169 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 79.04084920860582 correct,  20.95915079139418 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.30622689792436 correct,  0.6937731020756326 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.30622689792436 correct,  0.6937731020756326 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.30622689792436 correct,  0.6937731020756326 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08405 | (8/25)
+         started: 06:32:53 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.84705842368216 correct,  0.15294157631784658 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.84705842368216 correct,  0.15294157631784658 incorrect,  0.0 unclassified.
+IBk                   evaluated in 65minutes, with: 99.85725452877001 correct,  0.14274547122999015 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.84705842368216 correct,  0.15294157631784658 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 23.367773510518983 correct,  76.63222648948101 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.85725452877001 correct,  0.14274547122999015 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.85725452877001 correct,  0.14274547122999015 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.85725452877001 correct,  0.14274547122999015 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08434 | (9/25)
+         started: 07:43:00 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.57078313253012 correct,  0.4292168674698795 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.57078313253012 correct,  0.4292168674698795 incorrect,  0.0 unclassified.
+IBk                   evaluated in 65minutes, with: 99.53564257028113 correct,  0.4643574297188755 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.57078313253012 correct,  0.4292168674698795 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 94.20180722891567 correct,  5.798192771084337 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.53564257028113 correct,  0.4643574297188755 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.53564257028113 correct,  0.4643574297188755 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.53564257028113 correct,  0.4643574297188755 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 06995 | (10/25)
+         started: 08:52:38 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 95.3098098914442 correct,  4.690190108555791 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 95.36236611754472 correct,  4.637633882455282 incorrect,  0.0 unclassified.
+IBk                   evaluated in 73minutes, with: 95.29168705485783 correct,  4.708312945142174 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 95.36236611754472 correct,  4.637633882455282 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 50.13320284890991 correct,  49.86679715109009 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 95.29168705485783 correct,  4.708312945142174 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 95.29168705485783 correct,  4.708312945142174 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 95.29168705485783 correct,  4.708312945142174 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04746 | (11/25)
+         started: 10:10:35 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.50483672147588 correct,  0.49516327852412095 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.50483672147588 correct,  0.49516327852412095 incorrect,  0.0 unclassified.
+IBk                   evaluated in 61minutes, with: 99.49856883187431 correct,  0.5014311681256921 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.50483672147588 correct,  0.49516327852412095 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 35.49714811023129 correct,  64.50285188976872 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.49856883187431 correct,  0.5014311681256921 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.49856883187431 correct,  0.5014311681256921 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.49856883187431 correct,  0.5014311681256921 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07910 | (12/25)
+         started: 11:16:49 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.97510180655388 correct,  1.0248981934461177 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.97510180655388 correct,  1.0248981934461177 incorrect,  0.0 unclassified.
+IBk                   evaluated in 56minutes, with: 98.64440132280194 correct,  1.355598677198065 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.97510180655388 correct,  1.0248981934461177 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 81.4971712809861 correct,  18.502828719013912 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 98.64440132280194 correct,  1.355598677198065 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.64440132280194 correct,  1.355598677198065 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.64440132280194 correct,  1.355598677198065 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08215 | (13/25)
+         started: 12:17:37 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+IBk                   evaluated in 55minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 23.568495362893923 correct,  76.43150463710607 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04908 | (14/25)
+         started: 13:18:01 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.34008097165992 correct,  1.6599190283400809 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.34008097165992 correct,  1.6599190283400809 incorrect,  0.0 unclassified.
+IBk                   evaluated in 109minutes, with: 98.40647773279352 correct,  1.5935222672064777 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.34008097165992 correct,  1.6599190283400809 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 90.5910931174089 correct,  9.408906882591094 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 4minutes, with: 98.40647773279352 correct,  1.5935222672064777 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.40647773279352 correct,  1.5935222672064777 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.40647773279352 correct,  1.5935222672064777 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08455 | (15/25)
+         started: 15:12:44 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.66410265023009 correct,  0.3358973497699103 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.66410265023009 correct,  0.3358973497699103 incorrect,  0.0 unclassified.
+IBk                   evaluated in 72minutes, with: 99.8068590238823 correct,  0.19314097611769843 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.66410265023009 correct,  0.3358973497699103 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 25.65919854892345 correct,  74.34080145107654 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.8068590238823 correct,  0.19314097611769843 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.8068590238823 correct,  0.19314097611769843 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.8068590238823 correct,  0.19314097611769843 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 05121 | (16/25)
+         started: 16:29:24 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 95.38609612801027 correct,  4.613903871989733 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 95.39612199474645 correct,  4.603878005253554 incorrect,  0.0 unclassified.
+IBk                   evaluated in 63minutes, with: 95.3820857813158 correct,  4.617914218684205 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 95.39612199474645 correct,  4.603878005253554 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 32.305347797317076 correct,  67.69465220268292 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 95.3820857813158 correct,  4.617914218684205 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 95.3820857813158 correct,  4.617914218684205 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 95.3820857813158 correct,  4.617914218684205 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08378 | (17/25)
+         started: 17:37:23 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.63091967915614 correct,  1.3690803208438633 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 90.93066695967477 correct,  9.069333040325239 incorrect,  0.0 unclassified.
+IBk                   evaluated in 66minutes, with: 98.57378310075816 correct,  1.4262168992418416 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.63091967915614 correct,  1.3690803208438633 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 74.77859575870784 correct,  25.221404241292166 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 98.57378310075816 correct,  1.4262168992418416 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.57378310075816 correct,  1.4262168992418416 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.57378310075816 correct,  1.4262168992418416 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04015 | (18/25)
+         started: 18:48:31 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 93.79929537447437 correct,  6.200704625525628 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 93.85157404250484 correct,  6.14842595749517 incorrect,  0.0 unclassified.
+IBk                   evaluated in 72minutes, with: 93.67655415388113 correct,  6.323445846118877 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 93.85157404250484 correct,  6.14842595749517 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 98.80668257756564 correct,  1.1933174224343674 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 93.67655415388113 correct,  6.323445846118877 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 93.67655415388113 correct,  6.323445846118877 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 93.67655415388113 correct,  6.323445846118877 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 06426 | (19/25)
+         started: 20:05:56 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 95.79653640402574 correct,  4.20346359597425 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 95.77114878955481 correct,  4.22885121044519 incorrect,  0.0 unclassified.
+IBk                   evaluated in 66minutes, with: 95.8128570133285 correct,  4.187142986671502 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 95.77114878955481 correct,  4.22885121044519 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 3.6612566869163117 correct,  96.33874331308368 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 4minutes, with: 95.8128570133285 correct,  4.187142986671502 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 95.8128570133285 correct,  4.187142986671502 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 95.8128570133285 correct,  4.187142986671502 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04048 | (20/25)
+         started: 21:17:16 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.9029155395251 correct,  1.0970844604749024 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.66997294860235 correct,  1.3300270513976555 incorrect,  0.0 unclassified.
+IBk                   evaluated in 87minutes, with: 99.04067728684501 correct,  0.9593227131549945 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.66997294860235 correct,  1.3300270513976555 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 97.96363089870755 correct,  2.036369101292456 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 4minutes, with: 99.04067728684501 correct,  0.9593227131549945 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.04067728684501 correct,  0.9593227131549945 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.04067728684501 correct,  0.9593227131549945 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04936 | (21/25)
+         started: 22:50:45 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 84.1132821239466 correct,  15.886717876053398 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 84.1132821239466 correct,  15.886717876053398 incorrect,  0.0 unclassified.
+IBk                   evaluated in 62minutes, with: 85.10142441643673 correct,  14.898575583563279 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 84.1132821239466 correct,  15.886717876053398 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 26.0179730032068 correct,  73.9820269967932 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 85.10142441643673 correct,  14.898575583563279 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 85.10142441643673 correct,  14.898575583563279 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 85.10142441643673 correct,  14.898575583563279 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04126 | (22/25)
+         started: 23:57:47 28/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 97.56359393232205 correct,  2.436406067677946 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 97.56359393232205 correct,  2.436406067677946 incorrect,  0.0 unclassified.
+IBk                   evaluated in 63minutes, with: 97.58459743290548 correct,  2.4154025670945156 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 97.56359393232205 correct,  2.436406067677946 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 92.31505250875146 correct,  7.684947491248542 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 97.58459743290548 correct,  2.4154025670945156 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 97.58459743290548 correct,  2.4154025670945156 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 97.58459743290548 correct,  2.4154025670945156 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07162 | (23/25)
+         started: 01:05:57 29/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+IBk                   evaluated in 40minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 0.0 correct,  100.0 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07859 | (24/25)
+         started: 01:51:04 29/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+IBk                   evaluated in 62minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 0.0 correct,  100.0 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08219 | (25/25)
+         started: 02:57:37 29/08/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 93.19366428824452 correct,  6.806335711755478 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 93.19366428824452 correct,  6.806335711755478 incorrect,  0.0 unclassified.
+IBk                   evaluated in 71minutes, with: 93.55801831891098 correct,  6.441981681089014 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 93.19366428824452 correct,  6.806335711755478 incorrect,  0.0 unclassified.
+Attribute mappings:
+
+Model attributes            Incoming attributes
+---------------------       ----------------
+(numeric) zhou_entr     --> 1 (numeric) zhou_entr
+(numeric) unim_entr     --> 2 (numeric) unim_entr
+(nominal) physionet     --> 3 (nominal) physionet
+
+InputMappedClassifier evaluated in 0minutes, with: 76.05721707740837 correct,  23.942782922591636 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 3minutes, with: 93.55801831891098 correct,  6.441981681089014 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 93.55801831891098 correct,  6.441981681089014 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 93.55801831891098 correct,  6.441981681089014 incorrect,  0.0 unclassified.
+
+
+[alex@fedortop wekaTraining_jar]$ 
