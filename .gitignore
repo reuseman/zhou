@@ -3,12 +3,18 @@ dataset/afdb/*
 # This trick allows the folder to be commited to preserve the structure of the project
 !dataset/afdb/.gitkeep 
 
-__pycache__/
+# This will exclude all the subdirectories in generated but not the files in it
+dataset/generated/*/
 
+__pycache__/
+script/
 
 todo
+test.py
+doc.md
+
+
+# IDE and filesystem files
 .vscode
 .idea
 .directory
-
-test.py

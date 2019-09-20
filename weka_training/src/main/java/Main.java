@@ -5,19 +5,20 @@ import weka.classifiers.bayes.BayesNet;
 import weka.classifiers.functions.Logistic;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.meta.AdaBoostM1;
-import weka.classifiers.misc.InputMappedClassifier;
 import weka.classifiers.rules.JRip;
 import weka.classifiers.trees.J48;
 import weka.classifiers.trees.REPTree;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
+import weka.filters.Filter;
+import weka.filters.supervised.attribute.Discretize;
+import weka.filters.unsupervised.attribute.Normalize;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
@@ -26,6 +27,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Main {
+
     public static class Stats {
         public double pctCorrect;
         public double pctIncorrect;
@@ -39,10 +41,10 @@ public class Main {
     }
 
     public static void saveConfusionMatrixToCsv(double[][] matrix, Path path) throws IOException {
-        int tp = (int) matrix[0][0];
+        int tn = (int) matrix[0][0];
         int fp = (int) matrix[0][1];
         int fn = (int) matrix[1][0];
-        int tn = (int) matrix[1][1];
+        int tp = (int) matrix[1][1];
 
         String content = String.format("tp,fp,fn,tn\n%d,%d,%d,%d", tp, fp, fn, tn);
         BufferedWriter writer = new BufferedWriter(new FileWriter(path.toFile()));
@@ -64,12 +66,17 @@ public class Main {
         // Get path where the main folder is located
         // tp, tn, fp, fn
         String homePath = System.getProperty("user.home");
-        Path datasetPath = Paths.get(homePath, "Uni", "Tirocinio", "code", "zhou", "dataset", "generated", "encoded_entropy");
+        Path datasetPath = Paths.get(homePath, "Uni", "Tirocinio", "code", "zhou", "dataset", "generated", "encoded_entropy_fft_16");
         File mainFolder = new File(datasetPath.toUri());
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
         int folderNumber = 0;
         int totalFolders = mainFolder.listFiles().length;
+
+        // Added just for Fourier dataset
+        Normalize normalize = new Normalize();
+        Discretize discretize = new Discretize();
+        discretize.setBinRangePrecision(20);
 
         for (final File currentFolder : mainFolder.listFiles()) {
             File[] datasets = currentFolder.listFiles();
@@ -81,8 +88,9 @@ public class Main {
                 Instances trainDataset = null;
                 Stats stats = null;
 
-                boolean j48, ibk, logistic, jrip, bayesnet, adaboostm1, randomforest, inputmappedclassifier, reptree;
-                j48 = ibk = logistic = jrip = bayesnet = adaboostm1 =  randomforest =  inputmappedclassifier = reptree = false;
+                // Used to keep track of the previously evaluated models
+                boolean j48, ibk, logistic, jrip, bayesnet, adaboostm1, randomforest, reptree;
+                j48 = ibk = logistic = jrip = bayesnet = adaboostm1 = randomforest = reptree = false;
 
                 long startTime = 0l;
                 long duration = 0l;
@@ -94,11 +102,13 @@ public class Main {
                             DataSource source = new DataSource(f.getAbsolutePath());
                             trainDataset = source.getDataSet();
                             trainDataset.setClassIndex(trainDataset.numAttributes() - 1);
+                            trainDataset = Filter.useFilter(trainDataset, normalize);
                             break;
                         case "test.arff":
                             source = new DataSource(f.getAbsolutePath());
                             testDataset = source.getDataSet();
                             testDataset.setClassIndex(testDataset.numAttributes() - 1);
+                            testDataset = Filter.useFilter(testDataset, normalize);
                             break;
                         case "bayesnet.csv":
                             bayesnet = true;
@@ -111,9 +121,6 @@ public class Main {
                             break;
                         case "adaboostm1.csv":
                             adaboostm1 = true;
-                            break;
-                        case "inputmappedclassifier.csv":
-                            inputmappedclassifier = true;
                             break;
                         case "jrip.csv":
                             jrip = true;
@@ -136,23 +143,6 @@ public class Main {
                 System.out.println("         started: " + dtf.format(LocalDateTime.now()));
                 System.out.println("=======================================");
 
-                if (bayesnet) {
-                    System.out.println("BayesNet              has been already evaluated previously!");
-                } else {
-                    startTime = System.nanoTime();
-
-                    resultsCsv = Paths.get(currentFolder.getAbsolutePath(), "bayesnet.csv");
-                    stats = execute(new BayesNet(), trainDataset, testDataset, resultsCsv);
-
-                    duration = System.nanoTime() - startTime;
-                    minutes = TimeUnit.MINUTES.convert(duration, TimeUnit.NANOSECONDS);
-                    System.out.println("BayesNet              evaluated in " + minutes + "minutes, with: " +
-                            stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
-                            stats.pctUnclassified + " unclassified.");
-                }
-
-                System.gc();
-
                 if (logistic) {
                     System.out.println("Logistic              has been already evaluated previously!");
                 } else {
@@ -168,7 +158,7 @@ public class Main {
                             stats.pctUnclassified + " unclassified.");
                 }
 
-                System.gc();
+                /*System.gc();
 
                 if (ibk) {
                     System.out.println("IBk                   has been already evaluated previously!");
@@ -183,7 +173,7 @@ public class Main {
                     System.out.println("IBk                   evaluated in " + minutes + "minutes, with: " +
                             stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
                             stats.pctUnclassified + " unclassified.");
-                }
+                }*/
 
                 System.gc();
 
@@ -202,26 +192,10 @@ public class Main {
                             stats.pctUnclassified + " unclassified.");
                 }
 
+                /*
                 System.gc();
 
-                if (inputmappedclassifier) {
-                    System.out.println("InputMappedClassifier has been already evaluated previously!");
-                } else {
-                    startTime = System.nanoTime();
-
-                    resultsCsv = Paths.get(currentFolder.getAbsolutePath(), "inputmappedclassifier.csv");
-                    stats = execute(new InputMappedClassifier(), trainDataset, testDataset, resultsCsv);
-
-                    duration = System.nanoTime() - startTime;
-                    minutes = TimeUnit.MINUTES.convert(duration, TimeUnit.NANOSECONDS);
-                    System.out.println("InputMappedClassifier evaluated in " + minutes + "minutes, with: " +
-                            stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
-                            stats.pctUnclassified + " unclassified.");
-                }
-
-                System.gc();
-
-                /*if (jrip) {
+                if (jrip) {
                     System.out.println("JRip                  has been already evaluated previously!");
                 } else {
                     startTime = System.nanoTime();
@@ -236,7 +210,7 @@ public class Main {
                             stats.pctUnclassified + " unclassified.");
                 }*/
 
-                //System.gc();
+                System.gc();
 
                 if (randomforest) {
                     System.out.println("RandomForest          has been already evaluated previously!");
@@ -266,7 +240,7 @@ public class Main {
                     duration = System.nanoTime() - startTime;
                     minutes = TimeUnit.MINUTES.convert(duration, TimeUnit.NANOSECONDS);
                     System.out.println("J48                   evaluated in " + minutes + "minutes, with: " +
-                            stats.pctCorrect+ " correct,  " + stats.pctIncorrect + " incorrect,  " +
+                            stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
                             stats.pctUnclassified + " unclassified.");
                 }
 
@@ -285,6 +259,26 @@ public class Main {
                     System.out.println("REPTree               evaluated in " + minutes + "minutes, with: " +
                             stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
                             stats.pctUnclassified + " unclassified.\n\n");
+                }
+
+                System.gc();
+
+                if (bayesnet) {
+                    System.out.println("BayesNet              has been already evaluated previously!");
+                } else {
+                    startTime = System.nanoTime();
+                    // Added just for Fourier dataset
+                    trainDataset = Filter.useFilter(trainDataset, discretize);
+                    testDataset = Filter.useFilter(testDataset, discretize);
+
+                    resultsCsv = Paths.get(currentFolder.getAbsolutePath(), "bayesnet.csv");
+                    stats = execute(new BayesNet(), trainDataset, testDataset, resultsCsv);
+
+                    duration = System.nanoTime() - startTime;
+                    minutes = TimeUnit.MINUTES.convert(duration, TimeUnit.NANOSECONDS);
+                    System.out.println("BayesNet              evaluated in " + minutes + "minutes, with: " +
+                            stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
+                            stats.pctUnclassified + " unclassified.");
                 }
 
                 System.gc();

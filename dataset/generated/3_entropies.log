@@ -1,0 +1,306 @@
+[alex@fedortop wekaTraining_jar]$ java -Xmx6G -jar wekaTraining.jar                          
+=======================================
+  CURRENT FOLDER: 05261 | (1/25)
+         started: 11:38:24 14/09/2019
+=======================================
+Sep 14, 2019 11:38:24 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Sep 14, 2019 11:38:24 AM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+BayesNet              evaluated in 0minutes, with: 98.5150689746068 correct,  1.484931025393199 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.36130392759863 correct,  1.6386960724013706 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.43598980757403 correct,  1.564010192425973 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 96.60838239170548 correct,  3.391617608294526 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 97.97249802302082 correct,  2.027501976979176 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 97.8824356383446 correct,  2.1175643616553907 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07879 | (2/25)
+         started: 11:55:18 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.73137282624063 correct,  0.2686271737593666 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.75434751873321 correct,  0.2456524812667892 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.73137282624063 correct,  0.2686271737593666 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 13minutes, with: 99.39558885904142 correct,  0.6044111409585748 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.7755549271879 correct,  0.22444507281210235 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.6801215891418 correct,  0.31987841085819313 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 06453 | (3/25)
+         started: 12:10:55 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.81700979125391 correct,  1.1829902087460877 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.70215637292905 correct,  1.2978436270709508 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.80552444942143 correct,  1.194475550578574 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 98.23700002871335 correct,  1.7629999712866453 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.61314497372729 correct,  1.3868550262727195 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.64760099922474 correct,  1.3523990007752607 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04043 | (4/25)
+         started: 12:27:39 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 85.5068249737501 correct,  14.493175026249899 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 85.95105403440756 correct,  14.04894596559244 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 85.50520959534771 correct,  14.49479040465229 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 87.29504886519668 correct,  12.704951134803327 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 87.1496648089815 correct,  12.850335191018496 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 86.84920442613682 correct,  13.150795573863178 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 05091 | (5/25)
+         started: 12:44:33 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 15minutes, with: 98.94473455178417 correct,  1.05526544821584 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.60835509138381 correct,  0.391644908616188 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.54852045256744 correct,  0.45147954743255003 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 00735 | (6/25)
+         started: 13:02:16 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.73149690475599 correct,  0.2685030952440146 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.73149690475599 correct,  0.2685030952440146 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.73149690475599 correct,  0.2685030952440146 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 13minutes, with: 98.34423091266191 correct,  1.6557690873380901 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.32625612211919 correct,  0.6737438778808145 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.30388086418219 correct,  0.6961191358178157 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 03665 | (7/25)
+         started: 13:17:22 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.30433134300067 correct,  0.6956686569993366 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.31570467254289 correct,  0.6842953274571131 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.30812245284807 correct,  0.6918775471519287 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 96.14254573026254 correct,  3.857454269737466 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.270211354374 correct,  0.729788645626007 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.16216472372287 correct,  0.8378352762771302 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08405 | (8/25)
+         started: 13:33:25 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.85895387961799 correct,  0.14104612038201408 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.89973829996941 correct,  0.10026170003058832 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.9150324576012 correct,  0.08496754239880366 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 19minutes, with: 99.82326751181049 correct,  0.1767324881895116 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.86745063385787 correct,  0.1325493661421337 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.85385582707406 correct,  0.14614417292594228 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08434 | (9/25)
+         started: 13:55:11 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.56576305220884 correct,  0.4342369477911647 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.46034136546184 correct,  0.5396586345381527 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.55572289156626 correct,  0.4442771084337349 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 15minutes, with: 98.63704819277109 correct,  1.3629518072289157 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.39006024096386 correct,  0.6099397590361446 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.21937751004016 correct,  0.7806224899598394 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 06995 | (10/25)
+         started: 14:13:18 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 95.32612044437195 correct,  4.673879555628047 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 95.01984450606209 correct,  4.980155493937911 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 93.21299769839975 correct,  6.787002301600246 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 13minutes, with: 92.92846916399355 correct,  7.071530836006452 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 94.52146649993657 correct,  5.47853350006343 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 94.70631943311767 correct,  5.293680566882329 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04746 | (11/25)
+         started: 14:28:51 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.50483672147588 correct,  0.49516327852412095 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.50483672147588 correct,  0.49516327852412095 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.50692601800974 correct,  0.49307398199026387 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 12minutes, with: 99.39410400518146 correct,  0.6058959948185446 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.49647953534046 correct,  0.5035204646595491 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.49230094227273 correct,  0.5076990577272632 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07910 | (12/25)
+         started: 14:43:37 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.97510180655388 correct,  1.0248981934461177 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.99969936319658 correct,  1.0003006368034109 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.98603405395065 correct,  1.013965946049359 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 98.3902265708273 correct,  1.6097734291727022 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.7591899204679 correct,  1.2408100795320998 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.62253682800842 correct,  1.3774631719915822 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08215 | (13/25)
+         started: 15:00:25 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.50168412310248 correct,  0.49831587689752227 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 19minutes, with: 98.96184192313017 correct,  1.038158076869838 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.44400867438749 correct,  0.5559913256125133 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.20177178978453 correct,  0.7982282102154755 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04908 | (14/25)
+         started: 15:22:48 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.33684210526316 correct,  1.6631578947368422 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 97.52550607287449 correct,  2.474493927125506 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.26234817813766 correct,  1.7376518218623482 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 18minutes, with: 96.95222672064777 correct,  3.0477732793522265 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 97.69554655870445 correct,  2.3044534412955464 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 97.84291497975708 correct,  2.157085020242915 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08455 | (15/25)
+         started: 15:43:13 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.66578213697893 correct,  0.33421786302106077 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.69937187195593 correct,  0.30062812804406974 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.66578213697893 correct,  0.33421786302106077 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 99.77158980215646 correct,  0.22841019784353903 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.79174364314265 correct,  0.2082563568573444 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.77158980215646 correct,  0.22841019784353903 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 05121 | (16/25)
+         started: 15:59:41 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 95.39010647470474 correct,  4.609893525295262 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 95.45026167512181 correct,  4.549738324878185 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 95.60867036955345 correct,  4.391329630446552 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 13minutes, with: 91.89308415712539 correct,  8.106915842874617 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 93.93836097130597 correct,  6.061639028694031 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 93.0621002185639 correct,  6.937899781436105 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08378 | (17/25)
+         started: 16:14:52 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.62652455774091 correct,  1.3734754422590925 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.63531480057136 correct,  1.3646851994286342 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.7451928359521 correct,  1.2548071640479068 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 15minutes, with: 97.52994176464125 correct,  2.470058235358752 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.1100977914515 correct,  1.889902208548511 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 97.92770025271948 correct,  2.0722997472805185 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04015 | (18/25)
+         started: 16:31:52 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 93.85384702807137 correct,  6.146152971928628 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 93.78111148994203 correct,  6.218888510057961 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 93.7129219229458 correct,  6.28707807705421 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 93.23559495397204 correct,  6.7644050460279574 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 93.751562677577 correct,  6.248437322423003 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 93.85839299920445 correct,  6.141607000795545 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 06426 | (19/25)
+         started: 16:47:57 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 95.80560340919395 correct,  4.194396590806057 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 95.92710127844772 correct,  4.072898721552272 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 95.77477559162209 correct,  4.225224408377913 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 13minutes, with: 96.01414452806237 correct,  3.985855471937619 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 96.08486716837429 correct,  3.915132831625714 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 95.97243630428869 correct,  4.027563695711306 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04048 | (20/25)
+         started: 17:03:28 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 98.67748722572888 correct,  1.3225127742711151 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 98.70754433423505 correct,  1.2924556657649535 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 98.66746818956017 correct,  1.3325318104398356 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 98.84781084059713 correct,  1.1521891594028655 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 98.85782987676585 correct,  1.1421701232341448 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 98.93046788898909 correct,  1.0695321110109208 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04936 | (21/25)
+         started: 17:20:13 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 84.13192631814454 correct,  15.86807368185547 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 82.24513386531434 correct,  17.75486613468566 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 79.17070624207622 correct,  20.829293757923782 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 75.96017600119323 correct,  24.03982399880677 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 80.67156387500933 correct,  19.328436124990677 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 77.60459392945037 correct,  22.39540607054963 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 04126 | (22/25)
+         started: 17:36:42 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 97.56359393232205 correct,  2.436406067677946 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 97.43523920653442 correct,  2.5647607934655774 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 97.36756126021004 correct,  2.632438739789965 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 95.23920653442241 correct,  4.7607934655775965 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 97.50991831971996 correct,  2.4900816802800465 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 97.41890315052508 correct,  2.5810968494749127 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07162 | (23/25)
+         started: 17:53:12 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.77346772551415 correct,  0.2265322744858481 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.77346772551415 correct,  0.2265322744858481 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 99.78110364487884 correct,  0.2188963551211566 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.75565058032987 correct,  0.24434941967012827 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.76837711260436 correct,  0.23162288739564244 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 07859 | (24/25)
+         started: 18:09:56 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 99.85132995055105 correct,  0.14867004944895124 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 99.84971397175269 correct,  0.15028602824730938 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 99.8529459293494 correct,  0.14705407065059306 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 99.43117546297792 correct,  0.5688245370220743 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 99.78830677741509 correct,  0.21169322258491968 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 99.59762127920882 correct,  0.4023787207911832 incorrect,  0.0 unclassified.
+
+
+=======================================
+  CURRENT FOLDER: 08219 | (25/25)
+         started: 18:26:20 14/09/2019
+=======================================
+BayesNet              evaluated in 0minutes, with: 93.2206534757013 correct,  6.7793465242987025 incorrect,  0.0 unclassified.
+Logistic              evaluated in 0minutes, with: 93.81778924818245 correct,  6.1822107518175535 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 0minutes, with: 93.3218629286642 correct,  6.678137071335796 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 14minutes, with: 90.73596140546194 correct,  9.264038594538063 incorrect,  0.0 unclassified.
+J48                   evaluated in 0minutes, with: 93.90381728320092 correct,  6.096182716799082 incorrect,  0.0 unclassified.
+REPTree               evaluated in 0minutes, with: 93.74188215846027 correct,  6.258117841539733 incorrect,  0.0 unclassified.
+
+
+[alex@fedortop wekaTraining_jar]$ 
