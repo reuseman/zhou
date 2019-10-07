@@ -5,13 +5,16 @@ dataset/afdb/*
 
 # This will exclude all the subdirectories in generated but not the files in it
 dataset/generated/*/
+dataset/generated/record_data_dict.pkl
 
+venv/
 __pycache__/
 script/
 
 todo
 test.py
 doc.md
+profiling.py
 
 
 # IDE and filesystem files

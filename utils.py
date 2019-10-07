@@ -8,7 +8,7 @@ from const import RECORD_LEN
 
 
 # Gives back Annotations-QRS
-def read_record_qrs(afdb_path, record_name, read_corrected):
+def read_record_qrs(afdb_path, record_name, read_corrected=False):
     corrected_records = ["05091", "07859"]
     record_path = str(Path.joinpath(afdb_path, record_name))
 

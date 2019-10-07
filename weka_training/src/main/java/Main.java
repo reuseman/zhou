@@ -66,7 +66,7 @@ public class Main {
         // Get path where the main folder is located
         // tp, tn, fp, fn
         String homePath = System.getProperty("user.home");
-        Path datasetPath = Paths.get(homePath, "Uni", "Tirocinio", "code", "zhou", "dataset", "generated", "encoded_entropy_fft_16");
+        Path datasetPath = Paths.get(homePath, "Uni", "Tirocinio", "code", "zhou", "dataset", "generated", "explicit_entropy_fft_16_ar_4");
         File mainFolder = new File(datasetPath.toUri());
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
@@ -102,13 +102,13 @@ public class Main {
                             DataSource source = new DataSource(f.getAbsolutePath());
                             trainDataset = source.getDataSet();
                             trainDataset.setClassIndex(trainDataset.numAttributes() - 1);
-                            trainDataset = Filter.useFilter(trainDataset, normalize);
+                            // trainDataset = Filter.useFilter(trainDataset, normalize);
                             break;
                         case "test.arff":
                             source = new DataSource(f.getAbsolutePath());
                             testDataset = source.getDataSet();
                             testDataset.setClassIndex(testDataset.numAttributes() - 1);
-                            testDataset = Filter.useFilter(testDataset, normalize);
+                            // testDataset = Filter.useFilter(testDataset, normalize);
                             break;
                         case "bayesnet.csv":
                             bayesnet = true;

@@ -1,4 +1,7 @@
+from const import ZHOU_RESULTS_CSV, WEKA_RESULTS_DIR, GENERATED_DIR
+
 from pathlib import Path
+
 import csv
 import xlsxwriter
 import utils
@@ -54,25 +57,21 @@ def sum_array(array1, array2):
 
 
 # Settings
-n_algorithms = 8    # with zhou too
+n_algorithms = 6    # with zhou too
 
 # Paths
-main_dir_path = Path().absolute()
-datasets_path = Path.joinpath(main_dir_path, "dataset")
-generated_path = Path.joinpath(datasets_path, "generated")
-generated_explicit_path = Path.joinpath(generated_path, "explicit_entropy")
-result_explict_xlsx = Path.joinpath(generated_path, "explicit_entropy.xlsx")
-result_original_zhou_path = Path.joinpath(datasets_path, "afdb_result_Bc.csv")
+generated_results_folder = Path.joinpath(GENERATED_DIR, "explicit_entropy_fft_16_ar_4")
+results_xlsx = Path.joinpath(WEKA_RESULTS_DIR, "explicit_entropy_fft_16_ar_4.xlsx")
 
 # The results of the original zhou algorithm are read
 
-folders = [x.stem for x in generated_explicit_path.iterdir()]
+folders = [x.stem for x in generated_results_folder.iterdir()]
 
 algorithms_results = []
-original_results = read_original_zhou_results(result_original_zhou_path)
+original_results = read_original_zhou_results(ZHOU_RESULTS_CSV)
 
 # Write .xlsx file
-workbook = xlsxwriter.Workbook(result_explict_xlsx)
+workbook = xlsxwriter.Workbook(results_xlsx)
 worksheet = workbook.add_worksheet()
 worksheet.freeze_panes(1, 1)
 worksheet.set_column("A:K", 20)
@@ -105,7 +104,7 @@ header_format = workbook.add_format(
 for col in range(len(header)):
     worksheet.write(0, col, header[col], header_format)
 
-for folder in generated_explicit_path.iterdir():
+for folder in generated_results_folder.iterdir():
     for csv_file in folder.iterdir():
         if csv_file.suffix == ".csv":
             l1o = folder.stem
@@ -187,7 +186,7 @@ for i in range(1, len(algorithms_results) + 1):
     zhou_dist -= 1
 
 print(row)
-""" for folder in generated_explicit_path.iterdir():
+""" for folder in generated_results_folder.iterdir():
     for csv_file in folder.iterdir():
         if csv_file.suffix == ".csv":
             result = read_results(csv_file)

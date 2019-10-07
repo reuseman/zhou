@@ -12,7 +12,8 @@ RESULTS_DIR = MAIN_DIR / "results"
 WEKA_RESULTS_DIR = RESULTS_DIR / "weka"
 PAPER_RESULTS_DIR = RESULTS_DIR / "paper_replication"
 PICKLE_RESULT = PAPER_RESULTS_DIR / "afdb_result"
-ZHOU_RESULTS_CSV = PAPER_RESULTS_DIR / "afdb_result.csv"
+ZHOU_RESULTS_CSV = PAPER_RESULTS_DIR / "afdb_result_Bc.csv"
+PICKLE_GENERATED_DATASET = GENERATED_DIR / "record_data_dict.pkl"
 
 
 # Settings

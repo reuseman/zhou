@@ -1,0 +1,400 @@
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/weka_training/
+.idea/  out/    src/    target/ 
+[alex@fedortop ~]$ cd Uni/Tirocinio/code/zhou/weka_training/out/artifacts/wekaTraining_jar/
+[alex@fedortop wekaTraining_jar]$ java -Xmx7G -jar wekaTraining.jar 
+=======================================
+  CURRENT FOLDER: 05261 | (1/23)
+         started: 20:34:03 05/10/2019
+=======================================
+Oct 05, 2019 8:34:04 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Oct 05, 2019 8:34:04 PM com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+Logistic              evaluated in 2minutes, with: 96.25911607064405 correct,  3.740883929355944 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 8minutes, with: 98.47333274756173 correct,  1.5266672524382743 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 85minutes, with: 97.21465600562341 correct,  2.7853439943765927 incorrect,  0.0 unclassified.
+J48                   evaluated in 19minutes, with: 94.51937439592302 correct,  5.4806256040769705 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 94.23600738072226 correct,  5.763992619277744 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 07879 | (2/23)
+         started: 22:35:52 05/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.75258023469532 correct,  0.24741976530467977 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 7minutes, with: 99.72960554220275 correct,  0.2703944577972572 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 68minutes, with: 99.71546726989962 correct,  0.2845327301003817 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 99.55287713841369 correct,  0.44712286158631415 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 99.3991234271172 correct,  0.6008765728827937 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 06453 | (3/23)
+         started: 00:12:39 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 98.65908634105723 correct,  1.3409136589427744 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 98.80552444942143 correct,  1.194475550578574 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 64minutes, with: 98.323140092457 correct,  1.6768599075429982 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 96.26439256898384 correct,  3.7356074310161658 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 97.43589743589743 correct,  2.5641025641025643 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04043 | (4/23)
+         started: 01:44:56 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 86.17720701074226 correct,  13.822792989257733 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 85.50520959534771 correct,  14.49479040465229 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 64minutes, with: 87.585816977627 correct,  12.41418302237299 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 88.08819966077054 correct,  11.911800339229465 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 88.33050642112914 correct,  11.669493578870851 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 05091 | (5/23)
+         started: 03:17:00 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.57843777197563 correct,  0.421562228024369 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.61651436031332 correct,  0.3834856396866841 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 65minutes, with: 99.61107484769364 correct,  0.38892515230635333 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 99.40709312445605 correct,  0.5929068755439513 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 99.27382506527415 correct,  0.7261749347258486 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 08405 | (6/23)
+         started: 04:50:44 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.4749005879754 correct,  0.5250994120246066 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.91673180844917 correct,  0.08326819155082758 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 63minutes, with: 99.85725452877001 correct,  0.14274547122999015 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 99.32195901165754 correct,  0.6780409883424532 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 99.79607789824287 correct,  0.20392210175712877 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 08434 | (7/23)
+         started: 06:21:28 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.20933734939759 correct,  0.7906626506024096 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.55572289156626 correct,  0.4442771084337349 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 65minutes, with: 98.34086345381526 correct,  1.659136546184739 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 97.64056224899599 correct,  2.359437751004016 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 97.7535140562249 correct,  2.2464859437751006 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 06995 | (8/23)
+         started: 07:55:48 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 92.84872868301346 correct,  7.151271316986535 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 93.21299769839975 correct,  6.787002301600246 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 64minutes, with: 95.12858152558039 correct,  4.871418474419616 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 91.07993983218253 correct,  8.920060167817466 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 92.39384548469526 correct,  7.606154515304736 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04746 | (9/23)
+         started: 09:28:11 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.51319390761131 correct,  0.4868060923886927 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.50483672147588 correct,  0.49516327852412095 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 66minutes, with: 99.38574681904603 correct,  0.6142531809539727 incorrect,  0.0 unclassified.
+J48                   evaluated in 14minutes, with: 97.91488205921067 correct,  2.085117940789336 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 97.24421787184255 correct,  2.7557821281574495 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 07910 | (10/23)
+         started: 11:03:54 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 98.86031320888792 correct,  1.139686791112083 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 7minutes, with: 98.98603405395065 correct,  1.013965946049359 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 74minutes, with: 98.5487441580803 correct,  1.4512558419197026 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 97.37626062477794 correct,  2.6237393752220615 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 97.50471453168986 correct,  2.495285468310148 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 08215 | (11/23)
+         started: 12:49:05 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.51552623079408 correct,  0.48447376920592444 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.49937710515388 correct,  0.5006228948461219 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 74minutes, with: 97.32385917962442 correct,  2.6761408203755823 incorrect,  0.0 unclassified.
+J48                   evaluated in 17minutes, with: 85.2766114520371 correct,  14.723388547962903 incorrect,  0.0 unclassified.
+REPTree               evaluated in 6minutes, with: 92.73289346191113 correct,  7.267106538088866 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04908 | (12/23)
+         started: 14:36:51 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 96.37246963562752 correct,  3.6275303643724697 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 98.26882591093117 correct,  1.7311740890688259 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 69minutes, with: 97.23076923076923 correct,  2.769230769230769 incorrect,  0.0 unclassified.
+J48                   evaluated in 15minutes, with: 93.85263157894737 correct,  6.147368421052631 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 95.95303643724696 correct,  4.046963562753036 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 08455 | (13/23)
+         started: 16:18:01 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.67921803096974 correct,  0.32078196903026435 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 7minutes, with: 99.66410265023009 correct,  0.3358973497699103 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 72minutes, with: 99.67082059722549 correct,  0.32917940277451213 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 99.51798730308018 correct,  0.4820126969198213 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 99.70944879244902 correct,  0.2905512075509724 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 05121 | (14/23)
+         started: 18:00:05 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 95.50039100880271 correct,  4.499608991197289 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 7minutes, with: 95.64075314310922 correct,  4.3592468568907785 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 71minutes, with: 94.69631649656112 correct,  5.303683503438872 incorrect,  0.0 unclassified.
+J48                   evaluated in 14minutes, with: 89.21216739187103 correct,  10.787832608128973 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 93.10220368550861 correct,  6.897796314491388 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 08378 | (15/23)
+         started: 19:41:05 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 98.82650258213383 correct,  1.1734974178661686 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 98.7451928359521 correct,  1.2548071640479068 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 78minutes, with: 97.85298318866059 correct,  2.1470168113394132 incorrect,  0.0 unclassified.
+J48                   evaluated in 16minutes, with: 87.78595758707834 correct,  12.214042412921657 incorrect,  0.0 unclassified.
+REPTree               evaluated in 6minutes, with: 88.95945500494452 correct,  11.04054499505549 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04015 | (16/23)
+         started: 21:32:35 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 93.69701102398 correct,  6.302988976020003 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 8minutes, with: 93.78565746107512 correct,  6.214342538924877 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 75minutes, with: 93.90157972496874 correct,  6.098420275031254 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 92.23548130469372 correct,  7.764518695306285 incorrect,  0.0 unclassified.
+REPTree               evaluated in 5minutes, with: 93.50835322195704 correct,  6.491646778042959 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 06426 | (17/23)
+         started: 23:19:23 06/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 96.23175265209902 correct,  3.768247347900988 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 7minutes, with: 95.77114878955481 correct,  4.22885121044519 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 63minutes, with: 95.88720645570768 correct,  4.1127935442923205 incorrect,  0.0 unclassified.
+J48                   evaluated in 11minutes, with: 94.95511832441744 correct,  5.044881675582555 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 95.15459243811769 correct,  4.84540756188231 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04048 | (18/23)
+         started: 00:50:01 07/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 98.65243963530709 correct,  1.3475603646929166 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 98.66746818956017 correct,  1.3325318104398356 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 65minutes, with: 98.72006812944595 correct,  1.2799318705540528 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 98.82276325017533 correct,  1.177236749824667 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 98.83027752730187 correct,  1.1697224726981263 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04936 | (19/23)
+         started: 02:24:21 07/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 80.98478633753449 correct,  19.01521366246551 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 79.17070624207622 correct,  20.829293757923782 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 62minutes, with: 75.43068088597211 correct,  24.56931911402789 incorrect,  0.0 unclassified.
+J48                   evaluated in 11minutes, with: 69.3470803191886 correct,  30.652919680811394 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 75.11186516518757 correct,  24.88813483481244 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 04126 | (20/23)
+         started: 03:53:34 07/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 96.64177362893815 correct,  3.3582263710618436 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 97.36756126021004 correct,  2.632438739789965 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 65minutes, with: 97.25554259043174 correct,  2.7444574095682612 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 95.58226371061843 correct,  4.417736289381564 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 95.10151691948658 correct,  4.898483080513419 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 07162 | (21/23)
+         started: 05:27:14 07/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.78873956424353 correct,  0.21126043575646508 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.77092241905926 correct,  0.22907758094074526 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 66minutes, with: 99.66656485440848 correct,  0.3334351455915292 incorrect,  0.0 unclassified.
+J48                   evaluated in 13minutes, with: 91.88810832824272 correct,  8.111891671757279 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 98.78588882101405 correct,  1.21411117898595 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 07859 | (22/23)
+         started: 07:01:15 07/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 99.81254645939045 correct,  0.1874535406095472 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 99.8529459293494 correct,  0.14705407065059306 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 64minutes, with: 80.49028796742186 correct,  19.509712032578133 incorrect,  0.0 unclassified.
+J48                   evaluated in 12minutes, with: 61.70776639410491 correct,  38.29223360589509 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 66.66720532626611 correct,  33.33279467373388 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+=======================================
+  CURRENT FOLDER: 08219 | (23/23)
+         started: 08:32:09 07/10/2019
+=======================================
+Logistic              evaluated in 2minutes, with: 93.0469105814483 correct,  6.953089418551693 incorrect,  0.0 unclassified.
+AdaBoostM1            evaluated in 6minutes, with: 93.3218629286642 correct,  6.678137071335796 incorrect,  0.0 unclassified.
+RandomForest          evaluated in 63minutes, with: 93.3741544793617 correct,  6.625845520638294 incorrect,  0.0 unclassified.
+J48                   evaluated in 11minutes, with: 90.36486007793128 correct,  9.63513992206872 incorrect,  0.0 unclassified.
+REPTree               evaluated in 4minutes, with: 90.51498743315959 correct,  9.48501256684041 incorrect,  0.0 unclassified.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+java.lang.IllegalStateException: No input instance format defined
+        at weka.filters.supervised.attribute.Discretize.input(Discretize.java:349)
+        at weka.filters.Filter.useFilter(Filter.java:705)
+        at Main.main(Main.java:271)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[alex@fedortop wekaTraining_jar]$ 
