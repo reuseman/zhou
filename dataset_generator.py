@@ -4,7 +4,7 @@ from spectrum import aryule
 from const import (
     AFDB_DIR,
     GENERATED_DIR,
-    AF_EVENTS_CSV,
+    AFDB_EVENTS_CSV,
     ENTROPY_THRESHOLD,
     PICKLE_GENERATED_DATASET,
 )
@@ -22,15 +22,15 @@ import time
 read_corrected = True
 save_records_data = True
 
-add_fft = True
-add_ar = True
+add_fft = False
+add_ar = False
 fft_n = 16
 ar_n = 4
 blocks = 2
 
 # Paths
 GENERATED_DIR.mkdir(exist_ok=True)
-folder_to_create = GENERATED_DIR / "explicit_entropy_fft_16_ar_4"
+folder_to_create = GENERATED_DIR / "encoded_entropy_126_removed"
 folder_to_create.mkdir(exist_ok=True)
 
 
@@ -86,7 +86,7 @@ def get_arff_head(relation_name, add_fft=False, add_ar=False):
     arff_head = "".join(
         [
             arff_head,
-            "@attribute zhou_explicit_entr numeric\n@attribute unim_entr numeric\n",
+            "@attribute zhou_encoded_entr numeric\n@attribute unim_entr numeric\n",
         ]
     )
 
@@ -104,7 +104,7 @@ def get_arff_head(relation_name, add_fft=False, add_ar=False):
                     [arff_head, "@attribute ar{}_b{} numeric\n".format(j, i)]
                 )
 
-    return "".join([arff_head, "@attribute physionet {0,1}\n@data\n"])
+    return "".join([arff_head, "@attribute physionet {0.0,1.0}\n@data\n"])
 
 
 def get_arff_data(record):
@@ -117,7 +117,7 @@ def get_arff_data(record):
 start_time = time.time()
 print("Start time: ", start_time)
 
-correct_af_events = utils.get_af_events(AF_EVENTS_CSV)
+correct_af_events = utils.get_af_events(AFDB_EVENTS_CSV)
 
 afdb_names = set([x.stem for x in AFDB_DIR.iterdir() if x.is_file()])
 afdb_names.remove(".gitkeep")
@@ -198,7 +198,17 @@ if execute_computation:
         oracle = utils.compute_binary_af_qrs(binary_af_samples, annot_qrs)
         print("LEN ORACLE: ", len(oracle))
 
-        entr = np.asarray(entr[7:])
+        entr = np.asarray(entr[126:])
+        unimol_entropy = np.asarray(unimol_entropy[119:])
+        if add_fft:
+            # The shape in the beginning is (n, fft_n)
+            fft_values = np.asarray(fft_values[9:]).transpose()
+        if add_ar:
+            # The shape in the beginning is (n, ar_n)
+            ar_values = np.asarray(ar_values[9:]).transpose()
+        oracle = np.asarray(oracle[128:])
+
+        """ entr = np.asarray(entr[7:])
         unimol_entropy = np.asarray(unimol_entropy)
         if add_fft:
             # The shape in the beginning is (n, fft_n)
@@ -206,7 +216,7 @@ if execute_computation:
         if add_ar:
             # The shape in the beginning is (n, ar_n)
             ar_values = np.asarray(ar_values[9:]).transpose()
-        oracle = np.asarray(oracle[9:])
+        oracle = np.asarray(oracle[9:]) """
 
         print("\nLENGTH IN THE RECORDS DATA: ")
         print("ENTR: ", entr.shape)
@@ -240,7 +250,7 @@ for record_name in afdb_names:
     # Folder's name is the name of the record wich is used to test
     sub_folder_record = Path.joinpath(folder_to_create, record_name)
     sub_folder_record.mkdir(exist_ok=True)
-
+    
     # Create Test.arff using record_name
     test_path = Path.joinpath(sub_folder_record, "test.arff")
 

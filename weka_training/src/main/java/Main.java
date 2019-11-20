@@ -66,7 +66,7 @@ public class Main {
         // Get path where the main folder is located
         // tp, tn, fp, fn
         String homePath = System.getProperty("user.home");
-        Path datasetPath = Paths.get(homePath, "Uni", "Tirocinio", "code", "zhou", "dataset", "generated", "explicit_entropy_fft_16_ar_4");
+        Path datasetPath = Paths.get(homePath, "Uni", "Tirocinio", "code", "zhou", "dataset", "generated", "encoded_entropy_126_removed");
         File mainFolder = new File(datasetPath.toUri());
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
@@ -82,6 +82,8 @@ public class Main {
             File[] datasets = currentFolder.listFiles();
             Path resultsCsv = null;
             folderNumber++;
+
+            System.out.println(currentFolder);
 
             try {
                 Instances testDataset = null;
@@ -158,7 +160,7 @@ public class Main {
                             stats.pctUnclassified + " unclassified.");
                 }
 
-                /*System.gc();
+                System.gc();
 
                 if (ibk) {
                     System.out.println("IBk                   has been already evaluated previously!");
@@ -173,7 +175,7 @@ public class Main {
                     System.out.println("IBk                   evaluated in " + minutes + "minutes, with: " +
                             stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
                             stats.pctUnclassified + " unclassified.");
-                }*/
+                }
 
                 System.gc();
 
@@ -192,8 +194,8 @@ public class Main {
                             stats.pctUnclassified + " unclassified.");
                 }
 
-                /*
-                System.gc();
+
+         /*       System.gc();
 
                 if (jrip) {
                     System.out.println("JRip                  has been already evaluated previously!");
@@ -260,7 +262,7 @@ public class Main {
                             stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
                             stats.pctUnclassified + " unclassified.\n\n");
                 }
-
+/*
                 System.gc();
 
                 if (bayesnet) {
@@ -279,7 +281,7 @@ public class Main {
                     System.out.println("BayesNet              evaluated in " + minutes + "minutes, with: " +
                             stats.pctCorrect + " correct,  " + stats.pctIncorrect + " incorrect,  " +
                             stats.pctUnclassified + " unclassified.");
-                }
+                }*/
 
                 System.gc();
 

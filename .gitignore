@@ -3,6 +3,9 @@ dataset/afdb/*
 # This trick allows the folder to be commited to preserve the structure of the project
 !dataset/afdb/.gitkeep 
 
+dataset/ltafdb/*
+!dataset/ltafdb/.gitkeep 
+
 # This will exclude all the subdirectories in generated but not the files in it
 dataset/generated/*/
 dataset/generated/record_data_dict.pkl
@@ -15,7 +18,8 @@ todo
 test.py
 doc.md
 profiling.py
-
+improve.md
+output.html
 
 # IDE and filesystem files
 .vscode

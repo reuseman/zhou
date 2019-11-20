@@ -27,7 +27,8 @@ def compute_wv(sy_list):
     wv_list = list()
 
     for i in range(2, len(sy_list)):
-        wy = sy_list[i] + (sy_list[i - 1] * 64) + (sy_list[i - 2] * 4096)
+        # wy = (sy_list[i - 2] * 4096) + (sy_list[i - 1] * 64) + sy_list[i]
+        wy = (sy_list[i - 2] << 12) + (sy_list[i - 1] << 6) + sy_list[i]
         wv_list.append(wy)
 
     return wv_list

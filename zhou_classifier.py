@@ -1,4 +1,4 @@
-from const import AFDB_DIR, PICKLE_RESULT, AF_EVENTS_CSV, ENTROPY_THRESHOLD
+from const import AFDB_DIR, PICKLE_RESULT, AFDB_EVENTS_CSV, ENTROPY_THRESHOLD
 
 import pickle as pkl
 import time
@@ -17,7 +17,7 @@ save_array_results = True
 start_time = time.time()
 
 # Read all records, build prediction and oracle, than compare them
-correct_af_events = utils.get_af_events(AF_EVENTS_CSV)
+correct_af_events = utils.get_af_events(AFDB_EVENTS_CSV)
 
 afdb_names = set([x.stem for x in AFDB_DIR.iterdir() if x.is_file()])
 afdb_names.remove(".gitkeep")
@@ -27,7 +27,7 @@ af_beats = 0
 non_af_beats = 0
 hybrid = 0
 
-for record_name in afdb_names:
+for record_name in ["07162"]:
     annot_qrs = utils.read_record_qrs(AFDB_DIR, record_name, read_corrected)
     # print("ANNOT QRS LEN: ", len(annot_qrs.sample))
 
