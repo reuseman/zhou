@@ -8,4 +8,4 @@ numpy==1.15.1
 XlsxWriter==1.1.9
 arff==0.9
 scikit_learn==0.21.3
-tensorflow==2.0.1
+tensorflow==2.0.3
